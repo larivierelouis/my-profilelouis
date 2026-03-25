@@ -1,0 +1,200 @@
+/* --- RESET --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+
+  /* BACKGROUND ANIMÉ */
+  background: linear-gradient(270deg, #3498db, #6c5ce7, #00b894, #3498db);
+  background-size: 800% 800%;
+  animation: gradientMove 12s ease infinite;
+}
+
+/* Animation du fond */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- CONTAINER --- */
+.container {
+  width: 700px;
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* --- CARDS (GLASS EFFECT) --- */
+.card-white {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.card-white:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+/* --- TITRES --- */
+h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #3498db;
+  font-size: 22px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding-bottom: 6px;
+}
+
+/* --- IMAGE --- */
+.profile-img {
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* --- TEXTE --- */
+.text-center {
+  text-align: center;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* --- BADGE --- */
+.badge {
+  background: rgba(255,255,255,0.6);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* --- HIGHLIGHTS --- */
+.highlights {
+  margin-top: 15px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* --- CHIPS --- */
+.chips {
+  margin-top: 10px;
+}
+
+.chip {
+  display: inline-block;
+  background: rgba(0,0,0,0.05);
+  padding: 6px 10px;
+  border-radius: 15px;
+  margin: 3px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.chip:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* --- BOUTONS --- */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3498db, #6c5ce7);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* --- INFOS CACHÉES --- */
+.hidden-info {
+  display: none;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  background: rgba(255,255,255,0.7);
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- SOCIAL --- */
+.socials {
+  list-style: none;
+  padding: 0;
+}
+
+.socials li {
+  margin: 8px 0;
+}
+
+/* --- LINKS --- */
+a {
+  color: #3498db;
+}
+
+a:hover {
+  color: #1d6fa5;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 720px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 540px) {
+  .card-white {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}

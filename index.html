@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Louis Lariviere — Profile</title>
+
+  <meta name="description" content="Profil de Louis Lariviere — étudiant à ICN Business School, alternant chez Le Cèdre Rouge, passionné de web et de musique.">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- PROFIL -->
+    <div class="card-white text-center">
+      <p class="badge">Alternant chez Le Cèdre Rouge</p>
+
+      <h1>Bonjour, je m'appelle Louis Lariviere</h1>
+
+      <img src="images/profile.jpg" class="profile-img" alt="Photo de Louis">
+
+      <p class="subtitle">
+        Étudiant à <strong>ICN Business School</strong> et passionné par le développement web.
+      </p>
+
+      <p>
+        J’apprends le HTML, CSS et je développe mes compétences en créant des projets personnels 🤓.
+      </p>
+
+      <!-- BOUTONS -->
+      <div class="actions">
+        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank" class="btn btn-primary">
+          Découvrir HTML
+        </a>
+
+        <button class="btn" onclick="showMail()">📧 Afficher mon mail</button>
+        <p id="mail" class="hidden-info"></p>
+
+        <button class="btn" onclick="showPhone()">📞 Afficher mon numéro</button>
+        <p id="phone" class="hidden-info"></p>
+      </div>
+
+      <!-- INFOS -->
+      <ul class="highlights">
+        <li><strong>École :</strong> ICN Business School</li>
+        <li><strong>Alternance :</strong> Le Cèdre Rouge</li>
+        <li><strong>Compétences :</strong> HTML, CSS</li>
+      </ul>
+
+    </div>
+
+    <!-- A PROPOS -->
+    <div class="card-white">
+      <h2>À propos</h2>
+      <p>
+        Je suis étudiant à ICN Business School et en alternance chez Le Cèdre Rouge.
+        Passionné par le web, je progresse en créant des projets et en apprenant chaque jour.
+      </p>
+
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Web</span>
+      </div>
+    </div>
+
+    <!-- HOBBIES -->
+    <div class="card-white">
+      <h2>💻 Coding</h2>
+      <p>J'aime apprendre le HTML, CSS et créer des sites web.</p>
+    </div>
+
+    <div class="card-white">
+      <h2>🎵 Musique</h2>
+      <p>
+        J'aime écouter de la musique pendant que je code.<br>
+        Mon artiste préféré est <strong>PNL</strong>.
+      </p>
+
+      <a class="btn btn-primary"
+         href="https://open.spotify.com/intl-fr/artist/3NH8t45zOTqzlZgBvZRjvB?si=ImkVv3GPQ0KcCM-t1QRQhA"
+         target="_blank">
+        🎧 Voir PNL sur Spotify
+      </a>
+    </div>
+
+    <div class="card-white">
+      <h2>🌍 Voyage</h2>
+      <p>
+        Le pays que j’aimerais visiter prochainement est la <strong>Thaïlande</strong>.
+        Sa culture, ses paysages et son ambiance me fascinent vraiment.
+      </p>
+
+      <a class="btn btn-primary"
+         href="https://fr.wikipedia.org/wiki/Tha%C3%AFlande"
+         target="_blank">
+        🇹🇭 Découvrir la Thaïlande
+      </a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card-white text-center">
+      <h2>Contact</h2>
+      <p>Tu peux afficher mes infos ci‑dessus via les boutons 😉</p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="card-white">
+      <h2>Mes réseaux sociaux</h2>
+      <ul class="socials">
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/louis-lariviere-8452b6332" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function showPhone() {
+      const phone = document.getElementById("phone");
+      phone.textContent = "06 14 81 40 65";
+      phone.style.display = "block";
+    }
+
+    function showMail() {
+      const mail = document.getElementById("mail");
+      mail.textContent = "louis.lariviere@icn-artem.com";
+      mail.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
